@@ -19,7 +19,12 @@
 
 var router = new geddy.RegExpRouter();
 
-router.get('/').to('Main.index');
+// do this for now
+router.get('/').to('Ictfs.index');
+
+// iCTF app routes
+router.get('/ictf').to('Ictfs.index');
+router.get('/ictf/week/:id').to('Ictfs.week');
 
 // Basic routes
 // router.match('/moving/pictures/:id', 'GET').to('Moving.pictures');
